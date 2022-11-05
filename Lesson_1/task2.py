@@ -1,28 +1,28 @@
 import math
 exam = input('Що мені робити з цими числами? (Введіть "+", "-", "*", "/", "^", "k") ')
 if exam == '^' or exam == 'k':
-    x = int(input('Введіть число: '))
+    a = int(input('Введіть число: '))
     if exam == '^':
-        z = math.pow(x,2)
+        z = math.pow(a,2)
         print('Квадрат числа дорівнює: ', z)
     elif exam == 'k':
-        z = math.sqrt(x)
+        z = math.sqrt(a)
         print('Корінь числа дорівнює: ', z)
 else:
-    x = int(input('Введіть перше число: '))
-    y = int(input('Введіть друге число: '))
+    a = int(input('Введіть перше число: '))
+    b = int(input('Введіть друге число: '))
     if exam == '+':
-        z = x+y
+        z = a+b
         print('Результат додавання: ', z)
     elif exam == '-':
-        z = x-y
+        z = a-b
         print('Результат віднімання: ', z)
     elif exam == '*':
-        z = x*y
+        z = a*b
         print('Результат множення: ', z)
     elif exam == '/':
-        if y == 0:
+        if b == 0:
             print('На 0 делить нельзя!')
         else:
-            z = x/y
+            z = a/b
             print('Результат ділення: ', z)
